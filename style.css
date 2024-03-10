@@ -13,7 +13,6 @@ body {
   text-align: center;
   padding: 20px 0;
 }
-
 .header__title {
   margin: 0;
 }
@@ -23,17 +22,14 @@ body {
   color: #0b2940;
   padding: 10px 0;
 }
-
 .nav__list {
   list-style-type: none;
   text-align: center;
 }
-
 .nav__item {
   display: inline;
   margin: 0 10px;
 }
-
 .nav__link {
   color: #0b2940;
   text-decoration: none;
@@ -45,7 +41,6 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 }
-
 .main__section {
   display: flex;
   justify-content: center;
@@ -56,14 +51,12 @@ body {
   background-color: #7ba9d0;
   box-shadow: -1px 3px 34px -5px rgba(0, 0, 0, 0.63);
 }
-
-.section__container {
+.main__section__container {
   display: flex;
   justify-content: center;
   border: 1px solid red;
 }
-
-.section__title {
+.main__section__title {
   color: #26405b;
 }
 
@@ -73,7 +66,6 @@ body {
   text-align: center;
   padding: 10px 0;
 }
-
 .footer__text {
   margin: 0;
 }

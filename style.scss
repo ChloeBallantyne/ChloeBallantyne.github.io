@@ -18,31 +18,31 @@ body {
   color: $dark-blue;
   text-align: center;
   padding: 20px 0;
-}
 
-.header__title {
-  margin: 0;
+  &__title {
+    margin: 0;
+  }
 }
 
 .nav {
   background-color: $light-blue;
   color: $dark-blue;
   padding: 10px 0;
-}
 
-.nav__list {
-  list-style-type: none;
-  text-align: center;
-}
+  &__list {
+    list-style-type: none;
+    text-align: center;
+  }
 
-.nav__item {
-  display: inline;
-  margin: 0 10px;
-}
+  &__item {
+    display: inline;
+    margin: 0 10px;
+  }
 
-.nav__link {
-  color: $dark-blue;
-  text-decoration: none;
+  &__link {
+    color: $dark-blue;
+    text-decoration: none;
+  }
 }
 
 .main {
@@ -50,27 +50,27 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
-}
 
-.main__section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: 10px;
-  padding: 20px;
-  background-color: $light-pastel-blue;
-  box-shadow: -1px 3px 34px -5px rgba(0, 0, 0, 0.63);
-}
+  &__section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 10px;
+    padding: 20px;
+    background-color: $light-pastel-blue;
+    box-shadow: -1px 3px 34px -5px rgba(0, 0, 0, 0.63);
 
-.section__container {
-  display: flex;
-  justify-content: center;
-  border: 1px solid red;
-}
+    &__container {
+      display: flex;
+      justify-content: center;
+      border: 1px solid red;
+    }
 
-.section__title {
-  color: $dark-pastel-blue;
+    &__title {
+      color: $dark-pastel-blue;
+    }
+  }
 }
 
 .footer {
@@ -78,8 +78,8 @@ body {
   color: $dark-blue;
   text-align: center;
   padding: 10px 0;
-}
 
-.footer__text {
-  margin: 0;
+  &__text {
+    margin: 0;
+  }
 }
