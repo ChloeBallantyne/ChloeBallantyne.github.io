@@ -1,3 +1,5 @@
+@use "./partials/mixins";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  @include mixins.flex(column, center, center);
 }
 
 .nav {
@@ -22,37 +26,36 @@ header {
   padding-right: 10px;
   width: 90vw;
   height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include mixins.flex(row, space-between, center);
 
   &__list {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    @include mixins.flex(row, space-between, center);
   }
 
   &__item {
-    display: flex;
     padding-left: 20px;
+    padding-right: 14px;
   }
 
   &__link {
     color: black;
     text-decoration: none;
   }
+
+  &__header {
+    padding-left: 14px;
+  }
 }
 
 .main {
-  display: flex;
-  justify-content: space-around;
+  @include mixins.flex(row, space-around, center);
   flex-wrap: wrap;
   padding: 20px;
 }
 
 .section {
-  display: flex;
-  justify-content: center;
+  @include mixins.flex(row, center, center);
   flex-wrap: wrap;
   width: 70%;
   margin: 10px;
@@ -63,7 +66,12 @@ header {
 
   &__title {
     color: black;
-    padding-bottom: 20px;
+  }
+
+  &__content {
+    &__paragraph {
+      padding-top: 20px;
+    }
   }
 }
 
@@ -84,12 +92,13 @@ header {
   }
 }
 
+.home {
+  @include mixins.flex(column, center, center);
+}
+
 .footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 10px;
-
-  &__text {
-  }
 }
