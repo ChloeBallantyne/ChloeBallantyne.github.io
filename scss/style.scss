@@ -15,7 +15,7 @@ header {
 .nav {
   background-color: white;
   color: black;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   box-shadow: 1px 2px 6px 1px rgba(180, 180, 180, 0.75);
   margin-top: 10px;
   padding-left: 10px;
@@ -25,19 +25,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.nav__list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-.nav__item {
-  display: flex;
-  padding-left: 20px;
-}
-.nav__link {
-  color: black;
-  text-decoration: none;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    padding-left: 20px;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 .main {
@@ -57,26 +60,28 @@ header {
   background-color: white;
   box-shadow: 1px 2px 6px 1px rgba(180, 180, 180, 0.75);
   border-radius: 10px 10px 10px 10px;
+
+  &__title {
+    color: black;
+    padding-bottom: 20px;
+  }
 }
-.section__box {
+
+.project {
   padding: 10px;
-}
-.section__box:hover {
-  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.75);
-}
-.section__container {
-  display: flex;
-  flex: 2;
-}
-.section__title {
-  color: black;
-  padding-bottom: 20px;
-}
-.section__img {
-  padding-left: 10px;
-}
-.section__header {
-  padding-bottom: 10px;
+  &:hover {
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.75);
+  }
+  &__header {
+    padding-bottom: 10px;
+  }
+  &__container {
+    display: flex;
+    flex: 2;
+  }
+  &__img {
+    padding-left: 10px;
+  }
 }
 
 .footer {
@@ -84,6 +89,7 @@ header {
   color: white;
   text-align: center;
   padding: 10px;
-}
 
-/*# sourceMappingURL=style.css.map */
+  &__text {
+  }
+}
