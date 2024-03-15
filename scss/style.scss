@@ -1,4 +1,5 @@
 @use "./partials/mixins";
+@use "./partials/queries";
 
 * {
   margin: 0;
@@ -77,19 +78,44 @@ header {
 }
 
 .project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
   padding: 10px;
+  margin: 10px;
   &:hover {
-    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 2px 6px 1px rgba(180, 180, 180, 0.75);
+    border-radius: 10px 10px 10px 10px;
   }
   &__header {
-    padding-bottom: 10px;
-  }
-  &__container {
     display: flex;
-    flex: 2;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  &__content {
+    grid-area: 2 / 1 / 4 / 3;
+  }
+  &__skills {
+    display: flex;
+    align-items: center;
+    grid-area: 4 / 1 / 5 / 3;
   }
   &__img {
-    padding-left: 10px;
+    grid-area: 2 / 3 / 6 / 4;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    grid-area: 5 / 1 / 6 / 3;
+  }
+  &__icon {
+    &:hover {
+      box-shadow: 1px 2px 6px 1px rgba(180, 180, 180, 0.75);
+      border-radius: 10px 10px 10px 10px;
+      cursor: pointer;
+    }
   }
 }
 
