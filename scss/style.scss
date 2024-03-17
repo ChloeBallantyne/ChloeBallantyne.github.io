@@ -1,5 +1,4 @@
 @use "./partials/mixins";
-@use "./partials/queries";
 
 * {
   margin: 0;
@@ -35,8 +34,8 @@ header {
   }
 
   &__item {
-    padding-left: 20px;
-    padding-right: 14px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   &__link {
@@ -74,6 +73,10 @@ header {
     &__paragraph {
       padding-top: 20px;
     }
+  }
+
+  &__imgs {
+    @include mixins.flex(row, space-around, space-around);
   }
 }
 
@@ -155,4 +158,16 @@ header {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  .nav {
+    &__item {
+      padding-left: 20px;
+      padding-right: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 961px) {
 }

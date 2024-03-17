@@ -40,8 +40,8 @@ header {
   align-items: center;
 }
 .nav__item {
-  padding-left: 20px;
-  padding-right: 14px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .nav__link {
   color: black;
@@ -84,6 +84,12 @@ header {
 }
 .section__content__paragraph {
   padding-top: 20px;
+}
+.section__imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
 }
 
 .project {
@@ -169,6 +175,13 @@ header {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  .nav__item {
+    padding-left: 20px;
+    padding-right: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
